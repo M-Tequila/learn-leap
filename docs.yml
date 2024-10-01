@@ -1,0 +1,36 @@
+@openapi
+'courses/create'
+post: 
+  description: Create a new course
+  tags:
+    - Course
+  requestBody:
+    description: Course payload
+    required: true
+    content:
+      application/json
+        schema: 
+          type: object
+          properties: 
+            title: 
+              type: string
+            description: 
+              type: string
+
+
+responses: 
+  201: 
+    description: successfully created a new course.
+    content: 
+      application/json
+        schema: 
+          type: object
+          properties: 
+            title: 
+            type: string
+
+
+
+
+
+
